@@ -5,6 +5,11 @@
   --color-font: #96919b;
   --color-imp: #2783ff;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 62.5%;
@@ -47,4 +52,31 @@ h3 {
 }
 .arrow-link:hover::after {
   margin-left: 12px;
+}
+
+/* List */
+.list {
+  list-style: none;
+  color: var(--color-heading);
+}
+
+.list--inline {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+.list--tick {
+  list-style: url(Icons/Icons/tick.svg);
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--inline {
+    font-size: 2rem;
+  }
+  .list--tick {
+    font-size: 3rem;
+  }
 }
