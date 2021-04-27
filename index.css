@@ -67,7 +67,7 @@ h3 {
 }
 
 .list--tick {
-  list-style: url(Icons/Icons/tick.svg);
+  list-style: url(Icons/tick.svg);
   margin-top: 1rem;
   font-size: 2rem;
 }
@@ -79,4 +79,28 @@ h3 {
   .list--tick {
     font-size: 3rem;
   }
+}
+
+/* Button */
+.btn {
+  border: 0;
+  font-size: 1.3rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-radius: 30px;
+}
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.btn--secondry {
+  background: var(--color-prime);
+  color: white;
+  text-decoration: none;
+}
+.btn--by {
+  background: white;
+  color: var(--color-heading);
+  border: 3px solid var(--color-heading);
+  font-size: 1.8rem;
 }
