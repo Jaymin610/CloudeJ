@@ -121,3 +121,34 @@ h3 {
 }
 /* Icons */
 /* TODO: */
+.icon {
+  height: 200px;
+  width: 200px;
+  color: white;
+}
+
+/* inputs */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 1.5rem 3.5rem;
+  outline: none;
+  color: var(--color-heading);
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+.btn-search {
+  /* TODO: add icon*/
+  width: auto;
+}
