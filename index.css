@@ -121,15 +121,21 @@ h3 {
 }
 /* Icons */
 /* TODO: */
-.icon {
-  height: 200px;
-  width: 200px;
+.icon-back {
+  background: orange;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  padding: 1rem;
   color: white;
+}
+.icon {
+  height: 30px;
+  width: 30px;
 }
 
 /* inputs */
 .input {
-  border: 1px solid #ccc;
   border-radius: 30px;
   padding: 1.5rem 3.5rem;
   outline: none;
