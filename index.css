@@ -156,14 +156,51 @@ h3 {
 /* badges */
 .badge {
   border-radius: 20px;
-  /* border: 1px solid; */
   font-size: 1.5rem;
   padding: 0.3rem 1rem;
   color: white;
 }
 .badge--primary {
-  background: var(--color-imp);
+  background: #1b69cf;
 }
 .badge--accent {
+  background: #08d0f8;
+}
+
+/* Card */
+.card {
+  width: 25%;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.card--primary .card-header {
+  background: var(--color-imp);
+  color: white;
+  padding: 2rem;
+}
+.card--secondary .card-header {
   background: var(--color-prime);
+  color: white;
+  padding: 2rem;
+}
+.plan-name {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.plan-price {
+  display: inline-block;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+.plan-duration {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.plan-description {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.card-body {
+  padding: 2.5rem;
+  margin-bottom: 1rem;
 }
