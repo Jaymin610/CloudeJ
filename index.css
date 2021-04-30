@@ -104,3 +104,16 @@ h3 {
   border: 3px solid var(--color-heading);
   font-size: 1.8rem;
 }
+
+.btn--primary:hover {
+  background: #ec3102;
+}
+.btn--secondry:hover {
+  background: #04caf1;
+}
+.btn--by:hover {
+  background: var(--color-heading);
+  color: white;
+}
+/* Icons */
+/* TODO: */
