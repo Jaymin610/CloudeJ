@@ -5,6 +5,9 @@
   --color-font: #96919b;
   --color-imp: #2783ff;
 }
+
+/* Typography */
+
 *,
 *::after,
 *::before {
@@ -85,9 +88,10 @@ h3 {
 .btn {
   border: 0;
   font-size: 1.3rem;
-  padding: 1.5rem 2rem;
+  padding: 2rem 3rem;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 40px;
+  text-transform: uppercase;
 }
 .btn--primary {
   background: var(--color-primary);
