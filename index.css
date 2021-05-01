@@ -236,3 +236,34 @@ h3 {
 .atyare {
   width: 50vw;
 }
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid_1x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Footer Card */
+.footer-card {
+  background: var(--color-imp);
+  color: white;
+  padding: 3rem;
+  align-items: center;
+  width: 70%;
+}
+.footer--heading {
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.footer-card p {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+.footer--btn {
+  width: 15rem;
+  float: right;
+  margin: 0 2.5rem;
+}
