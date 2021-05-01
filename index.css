@@ -20,7 +20,7 @@ html {
 }
 body {
   color: var(--color-font);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 /* Headings */
 h1,
@@ -224,4 +224,15 @@ h3 {
 .card-body {
   padding: 2.5rem;
   margin-bottom: 1rem;
+}
+
+/* Feature Content */
+.feature--content h3 {
+  margin-bottom: 0;
+}
+.feature--content .text {
+  margin-top: 1rem;
+}
+.atyare {
+  width: 50vw;
 }
