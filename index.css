@@ -166,6 +166,7 @@ p {
 .icon {
   height: 50px;
   width: 50px;
+  fill: var(--color-primary);
 }
 
 /* inputs */
@@ -407,4 +408,17 @@ p {
   .nav-link {
     font-size: 1.5rem;
   }
+}
+
+/* media */
+.media {
+  display: flex;
+  padding: 2rem;
+}
+.media_title {
+  margin-top: 0;
+  color: white;
+}
+.media_body {
+  margin: 0 2rem;
 }
