@@ -375,7 +375,7 @@ p {
   color: white;
   display: inline-block;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .collapsible_icon {
   fill: white;
@@ -385,6 +385,7 @@ p {
 }
 .collapsible_content {
   max-height: 0;
+  font-size: 1.5rem;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
@@ -401,7 +402,6 @@ p {
 @media screen and (min-width: 768px) {
   .collapsible_icon {
     max-height: 0;
-    /* transform: rotate(0); */
   }
   .collapsible_content {
     max-height: 100%;
@@ -531,4 +531,30 @@ p {
   .grid_1x2 {
     grid-template-columns: auto 1fr;
   }
+}
+
+/* Footer */
+.footer_heading {
+  text-transform: uppercase;
+}
+.footer_branding {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    padding-top: 3rem;
+  }
+  .footer_divs {
+    margin-top: 3rem;
+  }
+}
+.collapsible_heading {
+  font-size: 2rem;
+}
+.collapsible_content {
+  font-size: 1.5rem;
 }
