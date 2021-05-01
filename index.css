@@ -241,29 +241,39 @@ h3 {
 .grid {
   display: grid;
 }
-.grid_1x2 {
+/* .grid_1x2 {
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 /* Footer Card */
-.footer-card {
+.callout {
   background: var(--color-imp);
   color: white;
   padding: 3rem;
-  align-items: center;
-  width: 70%;
 }
-.footer--heading {
+.callout--heading {
   color: white;
-  margin-bottom: 0;
-  margin-top: 0;
+  font-size: 2.5rem;
 }
-.footer-card p {
-  margin-bottom: 1.5rem;
-  font-size: 1.3rem;
+.callout--content {
+  text-align: center;
+  font-size: 1.2rem;
 }
-.footer--btn {
-  width: 15rem;
-  float: right;
-  margin: 0 2.5rem;
+.btn--callout {
+  width: 65%;
+  justify-self: center;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid_1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout--content {
+    text-align: left;
+  }
+  .btn--callout {
+    width: 100%;
+    justify-self: self-start;
+    margin-left: 0;
+  }
 }
