@@ -89,7 +89,7 @@ p {
 .list--inline {
   display: inline-block;
   margin-right: 1rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .list--tick {
@@ -103,7 +103,7 @@ p {
     font-size: 2rem;
   }
   .list--tick {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -114,7 +114,7 @@ p {
 .btn {
   border: 0;
   font-size: 1.3rem;
-  padding: 2rem 6rem;
+  padding: 1.5rem 6rem;
   border-radius: 40px;
   text-transform: uppercase;
   cursor: pointer;
@@ -136,7 +136,7 @@ p {
   background: white;
   color: var(--color-heading);
   border: 3px solid var(--color-heading);
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .btn--primary:hover {
@@ -204,7 +204,7 @@ p {
 /* badges */
 .badge {
   border-radius: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0.3rem 1rem;
   color: white;
 }
@@ -213,6 +213,11 @@ p {
 }
 .badge--accent {
   background: #08d0f8;
+}
+@media screen and (min-width: 768px) {
+  .badge {
+    font-size: 1.5rem;
+  }
 }
 
 /* JT Cards 
@@ -247,14 +252,14 @@ p {
 
 /* Card */
 .card {
-  /* width: 95%; */
-  border-radius: 10px;
-  box-shadow: 0 0 1rem 1px #777;
-  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 0 0.8rem 0.1px #777;
+  margin: 5rem auto;
+  transition: all 0.3s;
 }
 .card-header {
   position: relative;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .icon-popular {
   position: absolute;
@@ -263,6 +268,9 @@ p {
   right: 0;
   height: 100px;
   overflow: hidden;
+}
+.card--primary {
+  transform: scale(1.1);
 }
 .card--primary .card-header {
   background: var(--color-imp);
@@ -275,30 +283,47 @@ p {
   padding: 2rem;
 }
 .plan-name {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1.2rem;
 }
 .plan-price {
   display: inline-block;
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 .plan-duration {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .plan-description {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .card-body {
-  padding: 2.5rem;
-  margin-bottom: 1rem;
+  padding: 1rem 2.5rem;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card--primary:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
   .card {
-    width: 25%;
+    width: 95%;
+  }
+  .plan-name {
+    font-size: 1rem;
+  }
+  .plan-price {
+    font-size: 4rem;
+  }
+  .plan-duration {
+    font-size: 1.3rem;
+  }
+  .plan-description {
+    font-size: 1.3rem;
   }
 }
 
@@ -325,6 +350,10 @@ p {
 @media screen and (min-width: 768px) {
   .grid_1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid_1x3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 }
 
@@ -415,7 +444,7 @@ p {
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 
 /* Navigation */
