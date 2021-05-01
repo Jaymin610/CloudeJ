@@ -121,7 +121,6 @@ p {
   outline: none;
   white-space: nowrap;
   text-align: center;
-  margin: 1rem;
 }
 .btn--primary {
   background: var(--color-primary);
@@ -156,27 +155,30 @@ p {
   }
 }
 /* Icons */
-.icon-back {
-  background: var(--color-primary);
-  border-radius: 100%;
-  padding: 1rem;
-}
 .icon {
-  height: 50px;
   width: 50px;
-  fill: var(--color-primary);
+  height: 50px;
 }
-.icon--container {
-  width: 50px;
-  height: 50px;
+.icon-primary {
+  background: var(--color-primary);
+}
+.icon-container {
+  width: 64px;
+  height: 64px;
+  background: #f3f9fa;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* inputs */
 .input {
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 1.5rem 3.5rem;
   outline: none;
   color: var(--color-heading);
+  font-size: 2.5rem;
 }
 
 ::placeholder {
@@ -184,21 +186,26 @@ p {
 }
 .input-group {
   border: 1px solid #ccc;
-  border-radius: 30px;
+  border-radius: 40px;
   display: flex;
 }
+
 .input-group .input {
   border: 0;
   flex-grow: 1;
 }
-.btn-search {
-  width: auto;
+.input-group .btn {
+  justify-self: flex-end;
 }
-.btn-search .icon {
-  height: 1.3rem;
-  width: 1.3rem;
-  margin-right: 1rem;
-  font-weight: 500;
+.btn .icon {
+  width: 10px;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }
 
 /* badges */
@@ -585,4 +592,11 @@ p {
 }
 .collapsible_content {
   font-size: 1.5rem;
+}
+
+/* Search Container */
+.search-container {
+  width: 1000px;
+  text-align: center;
+  margin: 1rem auto;
 }
