@@ -414,9 +414,8 @@ p {
   align-items: center;
 }
 .logo {
-  height: 20px;
-  width: 20px;
-  margin: 1rem;
+  height: 4rem;
+  width: 6rem;
 }
 .navbar_links {
   display: flex;
@@ -439,7 +438,7 @@ p {
     justify-content: space-between;
   }
   .logo {
-    margin: 1rem;
+    margin-left: 1rem;
   }
   .navbar_links {
     flex-direction: row;
