@@ -59,8 +59,32 @@ p {
 }
 
 /* Common Block */
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+.block_header {
+  text-align: center;
+}
 .block-dark {
   background: black;
+  color: #7b858b;
+}
+.block-heading {
+  margin-top: 0;
+  color: #7b858b;
+}
+.block-dark .block-heading {
+  color: white;
+}
+.block--skewed-left {
+  padding-bottom: calc(--padding-vertical + 5rem);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.block--skewed-right {
+  padding-bottom: calc(--padding-vertical + 5rem);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
 }
 
 /* Links */
@@ -599,4 +623,35 @@ p {
   width: 1000px;
   text-align: center;
   margin: 1rem auto;
+}
+
+/* Skewed */
+
+/* Hero */
+.block .container {
+  margin: 0 auto;
+}
+.hero_content {
+  text-align: center;
+}
+.hero_tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero-image {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding: 20rem;
+  }
+  .hero_content {
+    text-align: left;
+    align-self: center;
+  }
 }
