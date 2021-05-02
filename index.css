@@ -34,10 +34,10 @@ h1 {
   font-size: 6rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 p {
@@ -51,7 +51,7 @@ p {
     font-size: 8rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   h3 {
     font-size: 2.5rem;
@@ -79,12 +79,24 @@ p {
 }
 .block--skewed-left {
   padding-bottom: calc(--padding-vertical + 5rem);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
 .block--skewed-right {
   padding-bottom: calc(--padding-vertical + 5rem);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
+}
+
+@media screen and (min-width: 1027px) {
+  .block--skewed-left {
+    padding-bottom: calc(--padding-vertical + 5rem);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+
+  .block--skewed-right {
+    padding-bottom: calc(--padding-vertical + 5rem);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
+  }
 }
 
 /* Links */
@@ -189,11 +201,11 @@ p {
 .icon-container {
   width: 64px;
   height: 64px;
-  background: #f3f9fa;
   border-radius: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 /* inputs */
@@ -294,7 +306,6 @@ p {
 }
 .card--primary .card-header::before {
   content: url(images/popular.svg);
-  display: inline-block;
   width: 50px;
   float: right;
   margin-top: -2.5rem;
@@ -340,6 +351,9 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .card-block.container {
+    margin: 10rem auto;
+  }
   .card {
     width: 95%;
   }
@@ -385,6 +399,7 @@ p {
 /* Grid */
 .grid {
   display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 @media screen and (min-width: 768px) {
@@ -402,6 +417,10 @@ p {
   background: var(--color-imp);
   color: white;
   padding: 3rem;
+  box-shadow: 0 0 0.8rem 0.1px #777;
+}
+.callout.container {
+  margin-bottom: 2rem;
 }
 .callout--heading {
   color: white;
@@ -417,6 +436,13 @@ p {
   align-self: center;
 }
 @media screen and (min-width: 768px) {
+  .callout {
+    z-index: 1;
+    position: relative;
+  }
+  .callout.container {
+    margin: 10rem auto -3rem auto;
+  }
   .callout .grid_1x2 {
     grid-template-columns: 1fr auto;
   }
@@ -503,8 +529,9 @@ p {
   transition: box-shadow 0.2s;
   cursor: pointer;
 }
-.nav_list {
+.nav_list.collapsible_content {
   margin-left: -4rem;
+  margin-right: 5rem;
 }
 .nav_item {
   border-bottom: 1px solid #222;
@@ -548,30 +575,24 @@ p {
 }
 
 /* media */
-.media {
-  padding: 2rem;
-  padding-bottom: 6rem;
-}
+
 .media_title {
-  margin-top: 0;
-  margin-left: 2rem;
   color: white;
-  display: inline;
-}
-.media_body {
-  margin: 6rem 2rem;
-}
-.media_body > p {
-  margin-left: 8rem;
 }
 .media_body .icon {
   fill: white;
   display: inline-block;
 }
+.media_image {
+  width: 20%;
+}
 @media screen and (min-width: 1024px) {
   .media {
     padding: 2rem;
     padding-bottom: 6rem;
+  }
+  .media .block-heading {
+    margin: 6rem auto 4rem auto;
   }
   .media_title {
     margin-top: 0;
@@ -591,11 +612,16 @@ p {
 /* Quote */
 .quote-block {
   box-shadow: 0 0 1rem 2px #777;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 .quote {
   font-style: italic;
   color: var(--color-dark-body);
   line-height: 1.3;
+}
+.quote-content {
+  margin-top: 2rem;
 }
 .quote_text::before {
   content: open-quote;
@@ -616,15 +642,23 @@ p {
   opacity: 0.4;
   font-size: 2rem;
 }
-.quote-image {
-  position: relative;
+.quote-im-sv {
+  padding-top: 1rem;
 }
-.quote-image .icon {
+.quote-im-sv .icon {
   fill: white;
-  float: right;
-  margin-left: -2.5rem;
-  margin-top: 3rem;
-  position: absolute;
+  margin-left: 15rem;
+  margin-top: -4rem;
+}
+.quote-image {
+  max-width: 95%;
+  margin: 0 0.8rem;
+}
+.quote-footer {
+  text-align: center;
+}
+.quote-line {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -632,6 +666,7 @@ p {
     padding: 3rem;
   }
   .quote-content {
+    margin-top: 10rem;
     margin-left: 5rem;
   }
   .quote {
@@ -644,12 +679,28 @@ p {
   .quote_organization {
     font-size: 1.5rem;
   }
+  .quote-footer {
+    text-align: left;
+  }
   .grid_1x2 {
     grid-template-columns: auto 1fr;
+  }
+  .quote-image {
+    width: 100%;
+  }
+  .quote-im-sv .icon {
+    fill: white;
+    float: right;
+    margin-left: -3.8rem;
+    margin-top: 3rem;
+    position: absolute;
   }
 }
 
 /* Footer */
+.footer {
+  background: #111;
+}
 .footer_heading {
   text-transform: uppercase;
 }
@@ -679,7 +730,7 @@ p {
 .search-container {
   width: 1000px;
   text-align: center;
-  margin: 1rem auto;
+  margin: 10rem auto;
 }
 
 /* Skewed */
@@ -690,6 +741,7 @@ p {
 }
 .hero_content {
   text-align: center;
+  margin: 0;
 }
 .hero_tagline {
   font-size: 2rem;
@@ -705,11 +757,15 @@ p {
 
 @media screen and (min-width: 1024px) {
   .hero {
-    padding: 20rem;
+    padding: 3rem;
   }
   .hero_content {
     text-align: left;
     align-self: center;
+  }
+  .hero-image {
+    width: 100%;
+    margin-left: 12rem;
   }
 }
 
