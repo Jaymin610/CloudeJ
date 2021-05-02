@@ -84,7 +84,7 @@ p {
 
 .block--skewed-right {
   padding-bottom: calc(--padding-vertical + 5rem);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
 }
 
 /* Links */
@@ -360,12 +360,22 @@ p {
 /* Feature*/
 .feature {
   gap: 5rem 3rem;
+  margin: 12rem 0;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
 }
 .feature-content h3 {
   margin-bottom: 0;
 }
+.feature__heading {
+  margin: 1rem 0;
+}
 .feature-content p {
   margin-top: 1rem;
+}
+.feature-image {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature-content {
@@ -469,32 +479,27 @@ p {
     margin: 0.5rem;
   }
 }
-
 /* Container */
-
 .container {
   max-width: 1140px;
-  margin: 10rem auto;
+  margin: 0 auto;
 }
 
 /* Navigation */
 .nav {
   background: black;
-  padding: 1rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .logo {
-  width: 50%;
+  width: 30%;
 }
-.nav .icon {
+.nav-icon {
   fill: white;
-  top: 5rem;
   opacity: 0.5;
-  position: absolute;
-  right: 2.5rem;
   transition: box-shadow 0.2s;
   cursor: pointer;
 }
@@ -517,12 +522,12 @@ p {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .navbar_container {
     flex-direction: row;
     justify-content: space-between;
   }
-  .nav .icon {
+  .nav-icon {
     display: none;
   }
   .logo {
@@ -544,15 +549,43 @@ p {
 
 /* media */
 .media {
-  display: flex;
   padding: 2rem;
+  padding-bottom: 6rem;
 }
 .media_title {
   margin-top: 0;
+  margin-left: 2rem;
   color: white;
+  display: inline;
 }
 .media_body {
-  margin: 0 2rem;
+  margin: 6rem 2rem;
+}
+.media_body > p {
+  margin-left: 8rem;
+}
+.media_body .icon {
+  fill: white;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .media {
+    padding: 2rem;
+    padding-bottom: 6rem;
+  }
+  .media_title {
+    margin-top: 0;
+    margin-left: 2rem;
+    color: white;
+    display: inline;
+  }
+  .media_body > p {
+    margin-left: 8rem;
+  }
+  .media_body .icon {
+    fill: white;
+    display: inline-block;
+  }
 }
 
 /* Quote */
@@ -679,3 +712,5 @@ p {
     align-self: center;
   }
 }
+
+/* Showcase */
