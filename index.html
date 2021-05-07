@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -14,7 +15,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="nav collapsible collapsible_expanded">
+    <nav class="nav collapsible">
       <a class="nav-logo-link" href="#"
         ><img class="logo" src="images/logo.png" alt=""
       /></a>
@@ -46,7 +47,7 @@
     </div>
 
     <!-- Search Block -->
-    <div class="block container block-domain">
+    <div class="block container block-domain" data-aos="zoom-in">
       <div class="block_header">
         <h2>Starting at 749 per month</h2>
         <p>
@@ -65,17 +66,23 @@
       </div>
       <ul class="search-list">
         <li class="list list--inline">
-          <span class="badge badge--accent">.com ₹1050</span>
+          <span class="badge badge--accent">.com ₹749</span>
         </li>
-        <li class="list list--inline">.sg ₹749</li>
-        <li class="list list--inline">.space ₹825</li>
+        <li class="list list--inline">.org ₹825</li>
+        <li class="list list--inline">.info ₹1050</li>
+        <li class="list list--inline">.co ₹850</li>
         <li class="list list--inline">.net ₹749</li>
         <li class="list list--inline">.xyz ₹749</li>
       </ul>
     </div>
 
     <!-- CARDS -->
-    <div class="card-block container grid grid_1x3">
+    <div
+      class="card-block container grid grid_1x3"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div class="card card--secondary">
         <header class="card-header">
           <div class="plan-name">Entry</div>
@@ -140,7 +147,7 @@
 
     <!-- Features -->
     <section class="block container">
-      <header class="block_header">
+      <header class="block_header" data-aos="fade-up">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
@@ -161,7 +168,12 @@
           </p>
           <a href="#" class="arrow-link">link more</a>
         </div>
-        <picture class="feature-image">
+        <picture
+          class="feature-image"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -189,7 +201,12 @@
           </p>
           <a href="#" class="arrow-link">link more</a>
         </div>
-        <picture class="feature-image">
+        <picture
+          class="feature-image"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -217,7 +234,12 @@
           </p>
           <a href="#" class="arrow-link">link more</a>
         </div>
-        <picture class="feature-image">
+        <picture
+          class="feature-image"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <source
             type="image/webp"
             srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
@@ -245,7 +267,12 @@
           </p>
           <a href="#" class="arrow-link">link more</a>
         </div>
-        <picture class="feature-image">
+        <picture
+          class="feature-image"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -260,7 +287,7 @@
     </section>
 
     <!-- Showcase -->
-    <div class="block block-dark block--skewed-right">
+    <div class="block block-dark block--skewed-right" data-aos="fade-up">
       <h2 class="block_header block-heading">User Friendly Control Panel</h2>
       <div class="grid grid_1x2">
         <picture class="showcase_image">
@@ -282,7 +309,7 @@
                   <use xlink:href="images/sprite.svg#snap"></use>
                 </svg>
               </div>
-              <div class="media_body">
+              <div class="media_body block-dark">
                 <h3 class="media_title">Easy start and Managed Updates</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -300,7 +327,7 @@
                   <use xlink:href="images/sprite.svg#growth"></use>
                 </svg>
               </div>
-              <div class="media_body">
+              <div class="media_body block-dark">
                 <h3 class="media_title">Easy start and Managed Updates</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -318,7 +345,7 @@
                   <use xlink:href="images/sprite.svg#wordpress"></use>
                 </svg>
               </div>
-              <div class="media_body">
+              <div class="media_body block-dark">
                 <h3 class="media_title">Easy start and Managed Updates</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -335,14 +362,14 @@
 
     <!-- Quotes -->
     <section class="block">
-      <header class="block_header">
+      <header class="block_header" data-aos="fade-down">
         <h2>What our customer are saying</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
           enim.
         </p>
       </header>
-      <div class="quote-block container">
+      <div class="quote-block container" data-aos="flip-up">
         <div class="grid grid_1x2">
           <div class="quote-im-sv">
             <img class="quote-image" src="images/testimonial.jpg" alt="" />
@@ -378,8 +405,7 @@
     </section>
 
     <!-- Callout -->
-    <link rel="stylesheet" href="index.css" />
-    <div class="container callout">
+    <div class="container callout" data-aos="zoom-in">
       <div class="grid grid_1x2">
         <div class="callout--content">
           <h2 class="callout--heading">Ready to get started ?</h2>
@@ -394,17 +420,20 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer grid">
+    <footer class="footer grid block-dark">
       <div class="collapsible collapsible_expanded footer_divs">
         <header>
-          <h2 class="footer_heading collapsible_heading">Products</h2>
+          <h2 class="footer_heading collapsible_heading">Company</h2>
           <svg class="icon collapsible_icon">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
         </header>
         <div class="collapsible_content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          eveniet?
+          <ul class="list call-list">
+            <li><a href="">About</a></li>
+            <li><a href="">Affiliates</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
         </div>
       </div>
       <div class="collapsible collapsible_expanded footer_divs">
@@ -414,10 +443,13 @@
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
         </header>
-        <p class="collapsible_content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          eveniet?
-        </p>
+        <div class="collapsible_content">
+          <ul class="list call-list">
+            <li><a href="">About</a></li>
+            <li><a href="">Affiliates</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
       </div>
       <div class="collapsible collapsible_expanded footer_divs">
         <header>
@@ -426,10 +458,13 @@
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
         </header>
-        <p class="collapsible_content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          eveniet?
-        </p>
+        <div class="collapsible_content">
+          <ul class="list call-list">
+            <li><a href="">Contact</a></li>
+            <li><a href="">Knowledge Base</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
       </div>
       <div class="collapsible collapsible_expanded footer_divs">
         <header>
@@ -438,10 +473,13 @@
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
         </header>
-        <p class="collapsible_content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          eveniet?
-        </p>
+        <div class="collapsible_content">
+          <ul class="list call-list">
+            <li><a href=""> Domain Checker </a></li>
+            <li><a href="">Domain Transfer</a></li>
+            <li><a href="">Free Domain</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer_branding">
         <img src="images/logo.png" alt="" />
@@ -449,5 +487,9 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

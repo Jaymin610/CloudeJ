@@ -21,8 +21,11 @@ html {
 }
 body {
   color: var(--color-font);
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
 }
 /* Headings */
 h1,
@@ -128,7 +131,7 @@ p {
 .list--inline {
   display: inline-block;
   margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .list--tick {
@@ -242,13 +245,14 @@ p {
 
 ::placeholder {
   color: #cdcbd7;
+  font-size: 1.5rem;
 }
 .input {
   border-radius: 30px;
   padding: 1.5rem 3.5rem;
   outline: none;
   color: var(--color-headings);
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .input-group .btn {
@@ -265,10 +269,11 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -277,6 +282,7 @@ p {
   }
   .search-list {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0;
   }
 }
 
@@ -302,10 +308,12 @@ p {
 /* Card */
 .card {
   border-radius: 6px;
-  box-shadow: 0 0 0.8rem 0.1px #777;
+  box-shadow: 0 0 20px 10px #f3f3f3;
   margin: 5rem auto;
   transition: all 0.3s;
   width: 80%;
+  border: 0;
+  outline: 0;
 }
 .card-header {
   position: relative;
@@ -338,7 +346,7 @@ p {
 }
 .plan-price {
   display: inline-block;
-  font-size: 6rem;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
 }
 .plan-duration {
@@ -346,7 +354,7 @@ p {
   font-size: 1.3rem;
 }
 .plan-description {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 1px;
   display: block;
@@ -426,6 +434,8 @@ p {
   .grid_1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media screen and (min-width: 1024px) {
   .grid_1x3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -448,7 +458,6 @@ p {
 }
 .callout--content {
   text-align: center;
-  font-size: 1.2rem;
 }
 .btn--callout {
   width: 65%;
@@ -479,7 +488,7 @@ p {
 /* collapsible */
 .collapsible {
   padding: 2rem;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .collapsible header {
   display: flex;
@@ -505,6 +514,17 @@ p {
   opacity: 0;
   transition: all 0.3s;
   margin: 0;
+}
+.collapsible_content .list {
+  margin: 0;
+  padding-left: 0;
+}
+.call-list > li > a {
+  color: #7b858b;
+  text-decoration: none;
+}
+.call-list > li > a:hover {
+  color: white;
 }
 .collapsible_expanded .collapsible_icon {
   transform: rotate(0);
@@ -540,18 +560,18 @@ p {
   flex-wrap: wrap;
 }
 .logo {
-  width: 30%;
+  width: 50%;
 }
 .nav-logo-link {
-  width: 81vw;
+  width: 170px;
 }
 .nav-icon {
   fill: white;
-  display: inline-block;
+  display: inli170pxne-block;
   opacity: 0.5;
   transition: box-shadow 0.2s;
   cursor: pointer;
-  width: 3.5rem;
+  width: 4rem;
   height: 4rem;
 }
 .nav_list.collapsible_content {
@@ -575,6 +595,9 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+  .nav {
+    padding: 0;
+  }
   .navbar_container {
     flex-direction: row;
     justify-content: space-between;
@@ -619,7 +642,6 @@ p {
 }
 .media_body {
   margin: 0 2rem;
-  color: white;
 }
 
 /* Quote */
@@ -707,7 +729,10 @@ p {
 
 /* Footer */
 .footer {
-  background: #111;
+  background: #232323;
+}
+.footer_divs {
+  border-bottom: 1px solid #383838;
 }
 .footer_heading {
   text-transform: uppercase;
@@ -775,8 +800,7 @@ p {
     width: 40ch;
   }
   .hero-image {
-    width: 70%;
-    margin-left: 12rem;
+    width: 100%;
   }
 }
 
