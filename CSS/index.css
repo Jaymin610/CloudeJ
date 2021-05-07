@@ -83,23 +83,23 @@ p {
   color: white;
 }
 .block--skewed-left {
-  padding-bottom: calc(--padding-vertical + 5rem);
+  padding-bottom: calc(var(--padding-vertical) + 5rem);
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
 .block--skewed-right {
-  padding-bottom: calc(--padding-vertical + 5rem);
+  padding-bottom: calc(var(--padding-vertical) + 5rem);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
 }
 
 @media screen and (min-width: 1027px) {
   .block--skewed-left {
-    padding-bottom: calc(--padding-vertical + 5rem);
+    padding-bottom: calc(var(--padding-vertical) + 5rem);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   }
 
   .block--skewed-right {
-    padding-bottom: calc(--padding-vertical + 5rem);
+    padding-bottom: calc(var(--padding-vertical) + 5rem);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
   }
 }
@@ -135,7 +135,7 @@ p {
 }
 
 .list--tick {
-  list-style: url(Icons/tick.svg);
+  list-style: url(../images/tick.svg);
   margin-top: 1rem;
   font-size: 2rem;
 }
@@ -320,7 +320,7 @@ p {
   border-radius: 6px;
 }
 .card--primary .card-header::before {
-  content: url(images/popular.svg);
+  content: url(../images/popular.svg);
   width: 50px;
   float: right;
   margin-top: -2.5rem;
