@@ -493,11 +493,9 @@ p {
 .collapsible header {
   display: flex;
   justify-content: space-between;
-  height: 4rem;
 }
 .collapsible_heading {
   color: white;
-  display: inline-block;
   margin-top: 0;
   font-size: 2rem;
 }
