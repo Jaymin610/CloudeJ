@@ -15,8 +15,10 @@
   <body>
     <!-- NAVBAR -->
     <nav class="nav collapsible collapsible_expanded">
-      <a href=""><img class="logo" src="images/logo.png" alt="" /></a>
-      <svg class="icon nav-icon">
+      <a class="nav-logo-link" href="#"
+        ><img class="logo" src="images/logo.png" alt=""
+      /></a>
+      <svg class="nav-icon">
         <use xlink:href="images/sprite.svg#menu"></use>
       </svg>
       <ul class="list nav_list collapsible_content">
@@ -29,13 +31,12 @@
     </nav>
 
     <!-- HERO -->
-    <div class="block block-dark block--skewed-left">
+    <div class="block block-dark block--skewed-left hero">
       <div class="container grid grid_1x2">
         <header class="block_header hero_content">
           <h1 class="block-heading">
             CloudJ <br />
-            Upflit your <br />
-            content
+            Upflit your content
           </h1>
           <p class="hero_tagline">An iconic tech experience...</p>
           <button class="btn btn--primary">get started</button>
@@ -45,22 +46,24 @@
     </div>
 
     <!-- Search Block -->
-    <div class="search-container">
-      <h2>Starting at 749 per month</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-        accusamus?
-      </p>
+    <div class="block container block-domain">
+      <div class="block_header">
+        <h2>Starting at 749 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+          accusamus?
+        </p>
+      </div>
       <div class="input-group">
         <input class="input" type="text" placeholder="Enter domain name here" />
         <button class="btn btn-block btn--primary">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#search"></use>
           </svg>
-          GET STARTED
+          search
         </button>
       </div>
-      <ul>
+      <ul class="search-list">
         <li class="list list--inline">
           <span class="badge badge--accent">.com ₹1050</span>
         </li>
@@ -76,7 +79,7 @@
       <div class="card card--secondary">
         <header class="card-header">
           <div class="plan-name">Entry</div>
-          <div class="plan-price">₹1850</div>
+          <div class="plan-price">₹1050</div>
           <div class="plan-duration">/month</div>
           <br />
           <span class="badge badge--accent">10% off</span><br />
@@ -84,9 +87,11 @@
         </header>
         <div class="card-body">
           <ul>
-            <li class="list list--tick">item 1</li>
-            <li class="list list--tick">item 2</li>
-            <li class="list list--tick">item 3</li>
+            <li class="list list--tick">Unlimited Websites</li>
+            <li class="list list--tick">Unlimited Bandwidth</li>
+            <li class="list list--tick">100 GB ssd Storage</li>
+            <li class="list list--tick">3 GB RAM</li>
+            <li class="list list--tick">1 CPU core</li>
           </ul>
           <button class="btn btn--by">Buy Now</button>
         </div>
@@ -102,35 +107,39 @@
         </header>
         <div class="card-body">
           <ul>
-            <li class="list list--tick">item 1</li>
-            <li class="list list--tick">item 2</li>
-            <li class="list list--tick">item 3</li>
+            <li class="list list--tick">Unlimited Websites</li>
+            <li class="list list--tick">Unlimited Bandwidth</li>
+            <li class="list list--tick">100 GB ssd Storage</li>
+            <li class="list list--tick">3 GB RAM</li>
+            <li class="list list--tick">2 CPU core</li>
           </ul>
           <button class="btn btn--by">Buy Now</button>
         </div>
       </div>
       <div class="card card--secondary">
         <header class="card-header">
-          <div class="plan-name">Entry</div>
-          <div class="plan-price">₹1850</div>
+          <div class="plan-name">Bussines plus</div>
+          <div class="plan-price">₹1550</div>
           <div class="plan-duration">/month</div>
           <br />
           <span class="badge badge--accent">10% off</span><br />
-          <div class="plan-description">Easy start on the cloud</div>
+          <div class="plan-description">Best Bussiness Solution</div>
         </header>
         <div class="card-body">
           <ul>
-            <li class="list list--tick">item 1</li>
-            <li class="list list--tick">item 2</li>
-            <li class="list list--tick">item 3</li>
+            <li class="list list--tick">Unlimited Websites</li>
+            <li class="list list--tick">Unlimited Bandwidth</li>
+            <li class="list list--tick">256 GB ssd Storage</li>
+            <li class="list list--tick">4 GB RAM</li>
+            <li class="list list--tick">3 CPU core</li>
           </ul>
-          <button class="btn btn--by">Buy Now</button>
+          <button class="btn btn--block btn--by">Buy Now</button>
         </div>
       </div>
     </div>
 
     <!-- Features -->
-    <section class="container block">
+    <section class="block container">
       <header class="block_header">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
@@ -140,9 +149,9 @@
       </header>
       <article class="grid grid_1x2 feature">
         <div class="feature-content">
-          <span class="icon--container">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#clock"></use>
+          <span class="icon-container icon-primary">
+            <svg class="icon icon-feature">
+              <use xlink:href="images/sprite.svg#easy"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy to Use</h3>
@@ -161,14 +170,14 @@
             type="image/jpg"
             srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
           />
-          <img src="images/easy@2x.jpg" alt="" />
+          <img class="feature-image" src="images/easy@2x.jpg" alt="" />
         </picture>
       </article>
       <article class="grid grid_1x2 feature">
         <div class="feature-content">
-          <span class="icon--container">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#clock"></use>
+          <span class="icon-container icon-primary">
+            <svg class="icon icon-feature">
+              <use xlink:href="images/sprite.svg#computer"></use>
             </svg>
           </span>
           <h3>Simply fast websites</h3>
@@ -189,14 +198,14 @@
             type="image/jpg"
             srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
           />
-          <img src="images/fast@2x.jpg" alt="" />
+          <img class="feature-image" src="images/fast@2x.jpg" alt="" />
         </picture>
       </article>
       <article class="grid grid_1x2 feature">
         <div class="feature-content">
-          <span class="icon--container">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#clock"></use>
+          <span class="icon-container icon-primary">
+            <svg class="icon icon-feature">
+              <use xlink:href="images/sprite.svg#wordpress"></use>
             </svg>
           </span>
           <h3>Wordpress Made easy</h3>
@@ -217,13 +226,13 @@
             type="image/jpg"
             srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"
           />
-          <img src="images/wordpress@2x.jpg" alt="" />
+          <img class="feature-image" src="images/wordpress@2x.jpg" alt="" />
         </picture>
       </article>
       <article class="grid grid_1x2 feature">
         <div class="feature-content">
-          <span class="icon--container">
-            <svg class="icon">
+          <span class="icon-container icon-primary">
+            <svg class="icon icon-feature">
               <use xlink:href="images/sprite.svg#clock"></use>
             </svg>
           </span>
@@ -251,7 +260,7 @@
     </section>
 
     <!-- Showcase -->
-    <div class="block media block-dark block--skewed-right">
+    <div class="block block-dark block--skewed-right">
       <h2 class="block_header block-heading">User Friendly Control Panel</h2>
       <div class="grid grid_1x2">
         <picture class="showcase_image">
@@ -260,77 +269,113 @@
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
           />
           <source
-            type="image/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+            type="image/jpg"
+            srcset="images/ipad.jpg 1x, images/ipad@2x.jpg 2x"
           />
-          <img src="images/ipad@2x.png" alt="" />
+          <img class="feature-image" src="images/ipad@2x.jpg" alt="" />
         </picture>
-        <div class="media_body">
-          <svg class="icon">
-            <use xlink:href="images/sprite.svg#snap"></use>
-          </svg>
-          <h3 class="media_title">Easy start and managed update</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem
-            nihil distinctio possimus illo vel eaque iusto tempore dolores enim
-            amet est harum voluptas nam ipsa, obcaecati saepe nesciunt numquam.
-          </p>
-          <svg class="icon">
-            <use xlink:href="images/sprite.svg#snap"></use>
-          </svg>
-          <h3 class="media_title">Staging GIT & WP CLI</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem
-            nihil distinctio possimus illo vel eaque iusto tempore dolores enim
-            amet est harum voluptas nam ipsa, obcaecati saepe nesciunt numquam.
-          </p>
-          <svg class="icon">
-            <use xlink:href="images/sprite.svg#snap"></use>
-          </svg>
-          <h3 class="media_title">Dynamic caching and more</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem
-            nihil distinctio possimus illo vel eaque iusto tempore dolores enim
-            amet est harum voluptas nam ipsa, obcaecati saepe nesciunt numquam.
-          </p>
-        </div>
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media_image">
+                <svg class="icon icon-feature">
+                  <use xlink:href="images/sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media_body">
+                <h3 class="media_title">Easy start and Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus in provident, fugiat aperiam consectetur, iusto
+                  accusamus quibusdam, repudiandae iste quia est ex omnis illum
+                  mollitia!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media_image">
+                <svg class="icon icon-feature">
+                  <use xlink:href="images/sprite.svg#growth"></use>
+                </svg>
+              </div>
+              <div class="media_body">
+                <h3 class="media_title">Easy start and Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus in provident, fugiat aperiam consectetur, iusto
+                  accusamus quibusdam, repudiandae iste quia est ex omnis illum
+                  mollitia!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media_image">
+                <svg class="icon icon-feature">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media_body">
+                <h3 class="media_title">Easy start and Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus in provident, fugiat aperiam consectetur, iusto
+                  accusamus quibusdam, repudiandae iste quia est ex omnis illum
+                  mollitia!
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <!-- Quotes -->
-    <div class="quote-block container">
-      <div class="grid grid_1x2">
-        <div class="quote-im-sv">
-          <img class="quote-image" src="images/testimonial.jpg" alt="" />
-          <svg class="icon icon-primary icon-container">
-            <use xlink:href="images/sprite.svg#quotes"></use>
-          </svg>
-        </div>
-        <div class="quote-content">
-          <blockquote class="quote">
-            <p class="quote_text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad beatae
-              nisi fugiat quod perspiciatis doloremque. Pariatur, nisi
-              provident. Ex aperiam perspiciatis laudantium dignissimos,
-              laboriosam placeat? Ipsum omnis id rem dicta.
-            </p>
-          </blockquote>
-          <footer>
-            <div class="quote-footer">
-              <div class="quote-line">
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
+    <section class="block">
+      <header class="block_header">
+        <h2>What our customer are saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          enim.
+        </p>
+      </header>
+      <div class="quote-block container">
+        <div class="grid grid_1x2">
+          <div class="quote-im-sv">
+            <img class="quote-image" src="images/testimonial.jpg" alt="" />
+            <svg class="icon icon-container icon-accent">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </div>
+          <div class="quote-content">
+            <blockquote class="quote">
+              <p class="quote_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                beatae nisi fugiat quod perspiciatis doloremque. Pariatur, nisi
+                provident. Ex aperiam perspiciatis laudantium dignissimos,
+                laboriosam placeat? Ipsum omnis id rem dicta.
+              </p>
+            </blockquote>
+            <footer>
+              <div class="quote-footer">
+                <div class="quote-line">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="quote_author">Sonu Shah</h3>
+                  <p class="qoute_organization">Code Company</p>
+                </div>
               </div>
-              <div>
-                <h3 class="quote_author">Sonu Shah</h3>
-                <p class="qoute_organization">Code Company</p>
-              </div>
-            </div>
-          </footer>
+            </footer>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Callout -->
     <link rel="stylesheet" href="index.css" />
@@ -350,10 +395,6 @@
 
     <!-- Footer -->
     <footer class="footer grid">
-      <div class="footer_branding">
-        <img style="width: 100%" src="images/logo.png" alt="" />Copyright 2021
-        CodeJ
-      </div>
       <div class="collapsible collapsible_expanded footer_divs">
         <header>
           <h2 class="footer_heading collapsible_heading">Products</h2>
@@ -368,7 +409,7 @@
       </div>
       <div class="collapsible collapsible_expanded footer_divs">
         <header>
-          <h2 class="footer_heading collapsible_heading">Products</h2>
+          <h2 class="footer_heading collapsible_heading">Company</h2>
           <svg class="icon collapsible_icon">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
@@ -380,7 +421,7 @@
       </div>
       <div class="collapsible collapsible_expanded footer_divs">
         <header>
-          <h2 class="footer_heading collapsible_heading">Products</h2>
+          <h2 class="footer_heading collapsible_heading">Supports</h2>
           <svg class="icon collapsible_icon">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
@@ -389,6 +430,22 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
           eveniet?
         </p>
+      </div>
+      <div class="collapsible collapsible_expanded footer_divs">
+        <header>
+          <h2 class="footer_heading collapsible_heading">Domains</h2>
+          <svg class="icon collapsible_icon">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <p class="collapsible_content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          eveniet?
+        </p>
+      </div>
+      <div class="footer_branding">
+        <img src="images/logo.png" alt="" />
+        <p>Copyright 2021 CodeJ</p>
       </div>
     </footer>
     <script src="main.js"></script>
