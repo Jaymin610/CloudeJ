@@ -567,7 +567,7 @@ p {
 }
 .nav-icon {
   fill: white;
-  display: inli170pxne-block;
+  /* display: inli170pxne-block; */
   opacity: 0.5;
   transition: box-shadow 0.2s;
   cursor: pointer;
@@ -588,7 +588,7 @@ p {
 .nav-link:hover {
   color: #fff;
 }
-.nav.collapsible_expanded .icon {
+.nav.collapsible_expanded .nav-icon {
   opacity: 1;
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
